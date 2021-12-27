@@ -1,0 +1,3 @@
+#!/bin/sh
+
+install -t ~/bin/ get-filtered-wsl-path filter-wsl-path.sh

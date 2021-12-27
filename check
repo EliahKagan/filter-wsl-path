@@ -1,0 +1,8 @@
+#!/bin/sh
+
+pylint get-filtered-wsl-path
+pycodestyle get-filtered-wsl-path
+mypy get-filtered-wsl-path
+
+shellcheck -s sh filter-wsl-path.sh
+shellcheck check deploy

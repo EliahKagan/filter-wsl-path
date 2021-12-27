@@ -1,0 +1,5 @@
+# Python virtual environment
+/.venv-filter-wsl-path/
+
+# Cached Python bytecode
+__pycache__/
