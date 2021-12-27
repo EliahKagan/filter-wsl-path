@@ -1,8 +1,20 @@
 #!/bin/sh
 
-pylint get-filtered-wsl-path
-pycodestyle get-filtered-wsl-path
-mypy get-filtered-wsl-path
+run() (
+    bright_blue='\e[34;1m' reset='\e[0m'
 
-shellcheck -s sh filter-wsl-path.sh
-shellcheck check deploy
+    printf '\n%bRUNNING ' "$bright_blue"
+    printf ' %s' "$@"
+    printf '%b\n' "$reset"
+    "$@"
+    printf '%bDONE.%b\n' "$bright_blue" "$reset"
+)
+
+run pylint get-filtered-wsl-path
+run pycodestyle get-filtered-wsl-path
+run mypy get-filtered-wsl-path
+run pyright get_filtered_wsl_path.py # This symlink tells pyright it's Python.
+
+run shellcheck -s sh filter-wsl-path.sh
+run shellcheck check
+run shellcheck deploy
