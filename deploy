@@ -1,4 +1,5 @@
 #!/bin/sh
 # SPDX-License-Identifier: 0BSD
 
-install -t ~/bin/ get-filtered-wsl-path filter-wsl-path.sh
+install -t ~/bin/ -m 644 filter-wsl-path.sh
+install -t ~/bin/ -m 755 get-filtered-wsl-path
