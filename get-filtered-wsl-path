@@ -12,9 +12,9 @@ KEEP_CONTAINING = ('clip.exe', 'code', 'code-insiders')
 
 def get_filtered_path() -> str:
     """Read $PATH, filter out most directories from Windows, and return it."""
-    keep_dirs = [os.path.dirname(filename)
+    keep_dirs = {os.path.dirname(filename)
                  for command in KEEP_CONTAINING
-                 if (filename := shutil.which(command))]
+                 if (filename := shutil.which(command))}
 
     old_path = os.getenv('PATH')
     if not old_path:
