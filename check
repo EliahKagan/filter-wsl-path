@@ -1,4 +1,5 @@
 #!/bin/sh
+# SPDX-License-Identifier: 0BSD
 
 run() (
     bright_blue='\e[34;1m' reset='\e[0m'
