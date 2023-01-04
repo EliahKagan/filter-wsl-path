@@ -1,4 +1,0 @@
-mypy
-pycodestyle
-pylint
-pyright

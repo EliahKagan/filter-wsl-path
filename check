@@ -10,8 +10,8 @@ run() (
     printf '%bDONE.%b\n' "$bright_blue" "$reset"
 )
 
+run flake8 get-filtered-wsl-path
 run pylint get-filtered-wsl-path
-run pycodestyle get-filtered-wsl-path
 run mypy get-filtered-wsl-path
 run pyright get_filtered_wsl_path.py # This symlink tells pyright it's Python.
 
