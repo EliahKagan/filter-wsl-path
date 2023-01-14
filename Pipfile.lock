@@ -183,18 +183,18 @@
         },
         "pyright": {
             "hashes": [
-                "sha256:0c760edbd40eb4f763027f742de2cb29c1d8320880e5f6ad85fc89db43fe6871",
-                "sha256:806a4af328dc1f2b6688147528c71393f0cf241eb1214d6e9a7fb1ef5caa2327"
+                "sha256:33426683d1e59a0a29247bec629deac07fb6302f916905f25e0487f964767d94",
+                "sha256:e3d7767b472ea42f99f338936d95964b97327e8d26fe04c45a377d65e83c9412"
             ],
             "index": "pypi",
-            "version": "==1.1.287"
+            "version": "==1.1.289"
         },
         "setuptools": {
             "hashes": [
                 "sha256:4d3c92fac8f1118bb77a22181355e29c239cabfe2b9effdaa665c66b711136d7",
                 "sha256:8ab4f1dbf2b4a65f7eec5ad0c620e84c34111a68d3349833494b9088212214dd"
             ],
-            "index": "pypi",
+            "markers": "python_version >= '3.7'",
             "version": "==65.7.0"
         },
         "tomli": {
