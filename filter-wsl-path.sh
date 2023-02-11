@@ -1,3 +1,4 @@
+# shellcheck shell=sh
 # filter-wsl-path.sh - Removes most Windows dirs from the $PATH in WSL.
 # SPDX-License-Identifier: 0BSD
 
