@@ -92,13 +92,15 @@ You can preview what `filter-wsl-path.sh` would set `$PATH` to by running:
 get-filtered-wsl-path
 ```
 
-If you didn't run `./deploy` to install it, then that won't work, but this will, so long as you're in the top-level repository directory:
+If you didn't run `./deploy` to install it, then that won't work, but this
+will, so long as you're in the top-level repository directory:
 
 ```sh
 ./get-filtered-wsl-path
 ```
 
-You can compare that to the actual current `$PATH`. One way to see the current `$PATH` is to run:
+You can compare that to the actual current `$PATH`. One way to see the current
+`$PATH` is to run:
 
 ```sh
 printenv PATH
